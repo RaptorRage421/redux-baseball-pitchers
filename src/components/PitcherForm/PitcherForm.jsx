@@ -8,9 +8,7 @@ const PitcherForm = () => {
     const [newPitcher, setNewPitcher] = useState('');
     const handlePitcherSubmit = event => {
         event.preventDefault();
-        // spread: give me everything in pitcherList, then add this new thing
         dispatch({type: 'ADD_PITCHER', payload: newPitcher})
-        // setPitcherList([...pitcherList, newPitcher]);
         setNewPitcher('');
       };
 

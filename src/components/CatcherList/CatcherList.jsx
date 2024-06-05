@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 
 const CatcherList = () => {
 const catcherList = useSelector(store => store.catcherList)
+const dispatch = useDispatch()
 return (
 
     <>
